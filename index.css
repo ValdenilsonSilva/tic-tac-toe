@@ -9,6 +9,8 @@ h1 {
     flex-direction: column;
     display:flex;
     justify-self: center;
+    justify-content: center;
+    place-items: center;
 }
 
 
@@ -41,6 +43,12 @@ div.bg-tabuleiro div {
 }
 
 
+div#currentplayer {
+    color: rgb(28, 142, 235);
+    margin-right: 10px;
+    font-size: 30px ;
+}
+
 div.bg-tabuleiro div div {
     background-color: rgba(43, 189, 247, 0.7);
     height: 100%;
@@ -48,4 +56,33 @@ div.bg-tabuleiro div div {
     align-items: center;
     font-size: 100px;
     font-weight: bold;
+}
+
+.fa-times {
+    color: chocolate;
+}
+
+.fa-circle-o {
+    color: silver;
+}
+
+.jogada:hover {
+    background-color: rgba(2, 59, 82, 0.7); 
+}
+#reset:hover {
+    background-color: #811f06; 
+}
+
+#reset {
+    background-color: #5e1503; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+    width: 50%;  
+    transition-duration: 0.4s;
 }
